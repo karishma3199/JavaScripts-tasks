@@ -37,7 +37,7 @@ function checkMove(a,b,c,sign){
 }
 //winner checking
 function winner(){
-      if(checkMove(1,2,3,symbol)||checkMove(4,5,6,symbol)||checkMove(1,4,7,symbol)
+      if(checkMove(1,2,3,symbol)||checkMove(4,5,6,symbol)||checkMove(7,8,9,symbol)||
       ||checkMove(1,4,7,symbol)||checkMove(2,5,8,symbol)||checkMove(3,6,9,symbol)
       ||checkMove(1,5,9,symbol)||checkMove(3,5,7,symbol))
       {
