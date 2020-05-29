@@ -1,0 +1,2 @@
+var skip = document.getElementsByClassName("ytp-ad-skip-button")[0];// getElementsByClassName returns a node list. Since there is only one element with that class name, we can just get the first one (that's what the [0] is for—it's just like an array).
+skip.click();//auto click skip
