@@ -2,15 +2,48 @@
 <html>
 <head>
 	<title>form validation</title>
+	<style>
+		body{
+          text-align: center;
+		  background-color: cyan;
+		  align:center;
+		  margin:200px 0 0 0 ;
+        }
+		.inputBox{
+			height:30px ;
+			width: 200px;
+		    margin-bottom: 2px;
+		}
+		label{
+			font-size:20px ;
+			font-weight: bold;
+			align-items: center;
+			justify-items: center;
+		}
+		.Button{
+			width:auto;
+			height: auto ;
+			font-size: 20px ;
+			background-color: rgb(16, 16, 156);
+			color: white;
+			margin-top: 2%;
+		}
+		.Button:hover{
+			cursor: pointer;
+		    background-color: rgb(99, 99, 228);
+		}
+		
+	</style>
 </head>
 <body>
 
 <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
-Email: <input type="text" name="Email" ></br>
-Password: <input type="text" name="Password" id="pass" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></br>
-<button onclick="myFunction()">submit</button>
-</form>
-	<script type="text/javascript" src="form.js"></script>
+<label for="Email">Email ID </label>
+<input type="text" name="Email"  class="inputBox" title="must enter a valid Email"></br>
+<label for="password">Password </label>
+<input type="text" name="Password" id="pass" class="inputBox" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></br>
+<button class="Button" onclick="myFunction()">submit</button>
+</form>	<script type="text/javascript" src="form.js"></script>
 
 </body>
 </html>
